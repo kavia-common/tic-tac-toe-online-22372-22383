@@ -1,0 +1,22 @@
+#screen-home-1-49{
+  margin:0 auto;
+}
+
+/* Card base background according to style_17 */
+.card .card-bg{
+  position:absolute;
+  left:0; top:0;
+  width:185px; height:225px;
+  background:var(--color-ffffff);
+  border-radius:var(--radius-20);
+}
+
+/* Ensure text selection does not affect layout */
+#screen-home-1-49, #screen-home-1-49 *{
+  user-select:none;
+}
+
+/* Simple visual feedback for bottom nav active (JS adds .active) */
+#nav-home.active, #nav-user.active, #nav-heart.active, #nav-comment.active{
+  filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+}
